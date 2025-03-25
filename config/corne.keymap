@@ -21,6 +21,36 @@
         };
     };
 
+    macros {
+        unicode_euro: unicode-euro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp N2 &kp N0 &kp A &kp C &kp RET>;
+            label = "Unicode Euro (€)";
+        };
+
+        unicode_pound: unicode-pound {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp A &kp N3 &kp RET>;
+            label = "Unicode Pound (£)";
+        };
+
+        unicode_e_acute: unicode-e-acute {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LC(U)) &kp E &kp N9 &kp RET>;
+            label = "Unicode e Acute (é)";
+        };
+
+        combo_hyper_m: combo-hyper-m {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(LG(M))))>;
+            label = "Hyper M";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
