@@ -86,25 +86,23 @@
         };
 
         game-layer {
+            display-name = "Game";
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E    &kp R      &kp T    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp A  &kp S  &kp D    &kp F      &kp G    &trans  &trans  &trans  &trans  &trans  &trans
 &kp LSHFT  &kp Z  &kp X  &kp C    &kp V      &kp B    &trans  &trans  &trans  &trans  &trans  &trans
                          &kp ESC  &kp SPACE  &mo 4    &trans  &trans  &trans
             >;
-
-            label = "Game";
         };
 
         game-alt-layer {
+            display-name = "GAlt";
             bindings = <
 &trans  &trans        &trans        &trans      &trans    &combo_hyper_m    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans        &trans        &trans      &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT        &trans  &trans  &trans  &trans  &trans  &trans
                                     &none       &none     &trans            &trans  &trans  &trans
             >;
-
-            label = "GAlt";
         };
     };
 };
