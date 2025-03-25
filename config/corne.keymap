@@ -1,73 +1,67 @@
 /*
- * Copyright (c) 2020 The ZMK Contributors
- *
- * SPDX-License-Identifier: MIT
- */
+* Copyright (c) 2020 The ZMK Contributors
+*
+* SPDX-License-Identifier: MIT
+*/
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    behaviors {
-        hm: homerow-mod {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Homerow Mod";
-            bindings = <&kp>, <&kp>;
+	behaviors {
+		hm: homerow-mod {
+			compatible = "zmk,behavior-hold-tap";
+			label = "Homerow Mod";
+			bindings = <&kp>, <&kp>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>;
-            flavor = "balanced";
-        };
-    };
+			#binding-cells = <2>;
+			tapping-term-ms = <200>;
+			quick-tap-ms = <200>;
+			flavor = "balanced";
+		};
+	};
 
-    macros {
-        unicode_euro: unicode-euro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp N2 &kp N0 &kp A &kp C &kp RET>;
-            label = "Unicode Euro (€)";
-        };
+	macros {
+		unicode_euro: unicode-euro {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(LC(U)) &kp N2 &kp N0 &kp A &kp C &kp RET>;
+			label = "Unicode Euro (€)";
+		};
 
-        unicode_pound: unicode-pound {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp A &kp N3 &kp RET>;
-            label = "Unicode Pound (£)";
-        };
+		unicode_pound: unicode-pound {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(LC(U)) &kp A &kp N3 &kp RET>;
+			label = "Unicode Pound (£)";
+		};
 
-        unicode_e_acute: unicode-e-acute {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LC(U)) &kp E &kp N9 &kp RET>;
-            label = "Unicode e Acute (é)";
-        };
+		unicode_e_acute: unicode-e-acute {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(LC(U)) &kp E &kp N9 &kp RET>;
+			label = "Unicode e Acute (é)";
+		};
 
-        combo_hyper_m: combo-hyper-m {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(M))))>;
-            label = "Hyper M";
-        };
-    };
+		combo_hyper_m: combo-hyper-m {
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings = <&kp LS(LA(LC(LG(M))))>;
+			label = "Hyper M";
+		};
+	};
 
-    keymap {
-        compatible = "zmk,keymap";
+	keymap {
+		compatible = "zmk,keymap";
 
-        default-layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            display-name = "Base";
-            bindings = <
-&kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P          &kp MINUS
-&kp LCTRL  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H    &hm RCTRL J  &hm RSHFT K  &hm RALT L  &hm RGUI SEMI  &kp SQT
-&kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp DEL
-                                   &kp ESC      &mo 0        &kp SPACE    &kp RET  &mo 0        &kp BSPC
-            >;
-        };
-    };
+		default-layer {
+			display-name = "Base";
+			bindings = <
+				&kp TAB    &kp Q       &kp W       &kp E        &kp R        &kp T        &kp Y    &kp U        &kp I        &kp O       &kp P          &kp MINUS
+				&kp LCTRL  &hm LGUI A  &hm LALT S  &hm LSHFT D  &hm LCTRL F  &kp G        &kp H    &hm RCTRL J  &hm RSHFT K  &hm RALT L  &hm RGUI SEMI  &kp SQT
+				&kp LSHFT  &kp Z       &kp X       &kp C        &kp V        &kp B        &kp N    &kp M        &kp COMMA    &kp DOT     &kp FSLH       &kp DEL
+				&kp ESC      &mo 0        &kp SPACE    &kp RET  &mo 0        &kp BSPC
+			>;
+		};
+	};
 };
