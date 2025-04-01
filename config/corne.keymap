@@ -89,7 +89,7 @@
             display-name = "Sym";
             bindings = <
 &trans  &kp EXCL          &kp AT          &kp POUND      &kp DOLLAR    &kp PRCNT    &kp CARET  &kp AMPS      &kp ASTRK     &kp LPAR     &kp RPAR     &kp GRAVE
-&trans  &hm LGUI A        &hm LALT N2     &hm LSHFT N3   &hm LCTRL N4  &kp N5       &kp N6     &hm RCTRL N7  &hm RSHFT N8  &hm RALT N9  &hm RGUI N0  &kp PIPE
+&trans  &hm LGUI N1       &hm LALT N2     &hm LSHFT N3   &hm LCTRL N4  &kp N5       &kp N6     &hm RCTRL N7  &hm RSHFT N8  &hm RALT N9  &hm RGUI N0  &kp PIPE
 &trans  &unicode_e_acute  &unicode_pound  &unicode_euro  &kp LBKT      &kp RBKT     &kp LBRC   &kp RBRC      &kp EQUAL     &kp PLUS     &kp BSLH     &kp TILDE
                                           &none          &mo 3         &none        &trans     &tog 1        &trans
             >;
