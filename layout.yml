@@ -1,0 +1,225 @@
+# https://keymap-drawer.streamlit.app/
+layout: { zmk_keyboard: corne }
+layers:
+    Default: # maybe swap tab and esc, should try this first though for vim reasons
+        - [Tab, Q, W, E, R, T, Y, U, I, O, P, { t: "-", s: _ }]
+        - [
+              LCtrl,
+              { h: LGui, t: A },
+              { h: LAlt, t: S },
+              { h: LShift, t: D },
+              { h: LCtrl, t: F },
+              G,
+              H,
+              { h: RCtrl, t: J },
+              { h: RShift, t: K },
+              { h: RAlt, t: L },
+              { h: RGui, t: ;, s: ":" },
+              { t: "'", s: '"' },
+          ]
+        - [
+              LShift,
+              Z,
+              X,
+              C,
+              V,
+              B,
+              N,
+              M,
+              { t: ",", s: < },
+              { t: ., s: ">" },
+              { t: /, s: "?" },
+              Del,
+          ]
+        - [Esc, Sym, Spc, Ret, Fun, BSpc]
+    Game:
+        - [
+              Tab,
+              Q,
+              W,
+              E,
+              R,
+              T,
+              { type: trans, t: Y },
+              { type: trans, t: U },
+              { type: trans, t: I },
+              { type: trans, t: O },
+              { type: trans, t: P },
+              { type: trans, t: "-", s: _ },
+          ]
+        - [
+              LCtrl,
+              A,
+              S,
+              D,
+              F,
+              G,
+              { type: trans, t: H },
+              { type: trans, h: RCtrl, t: J },
+              { type: trans, h: RShift, t: K },
+              { type: trans, h: RAlt, t: L },
+              { type: trans, h: RGui, t: ;, s: ":" },
+              { type: trans, t: "'", s: '"' },
+          ]
+        - [
+              LShift,
+              Z,
+              X,
+              C,
+              V,
+              B,
+              { type: trans, t: N },
+              { type: trans, t: M },
+              { type: trans, t: ",", s: < },
+              { type: trans, t: ., s: ">" },
+              { type: trans, t: /, s: "?" },
+              { type: trans, t: Del },
+          ]
+        - [
+              Esc,
+              Spc,
+              GAlt,
+              { type: trans, t: Ret },
+              { type: trans, t: Fun },
+              { type: trans, t: BSpc },
+          ]
+    GAlt:
+        - [
+              { type: trans, t: Tab },
+              { type: trans, t: Q },
+              { type: trans, t: W },
+              { type: trans, t: E },
+              { type: trans, t: R },
+              { h: (macro), t: "hyper M" },
+              { type: trans, t: Y },
+              { type: trans, t: U },
+              { type: trans, t: I },
+              { type: trans, t: O },
+              { type: trans, t: P },
+              { type: trans, t: "-", s: _ },
+          ]
+        - [
+              { type: trans, t: LCtrl },
+              { type: trans, t: A },
+              { type: trans, t: S },
+              { type: trans, t: D },
+              { type: trans, t: F },
+              { type: trans, t: G },
+              { type: trans, t: H },
+              { type: trans, h: RCtrl, t: J },
+              { type: trans, h: RShift, t: K },
+              { type: trans, h: RAlt, t: L },
+              { type: trans, h: RGui, t: ;, s: ":" },
+              { type: trans, t: "'", s: '"' },
+          ]
+        - [
+              { type: trans, t: LShift },
+              Vol-,
+              Vol+,
+              Media Prev,
+              Media Play,
+              Media Next,
+              { type: trans, t: N },
+              { type: trans, t: M },
+              { type: trans, t: ",", s: < },
+              { type: trans, t: ., s: ">" },
+              { type: trans, t: /, s: "?" },
+              { type: trans, t: Del },
+          ]
+        - [
+              { type: ghost },
+              { type: ghost },
+              { type: held },
+              { type: trans, t: Ret },
+              { type: trans, t: Fun },
+              { type: trans, t: BSpc },
+          ]
+    Sym:
+        - [
+              { type: trans, t: Tab },
+              "!",
+              "@",
+              "#",
+              "$",
+              "%",
+              "^",
+              "&",
+              "*",
+              "(",
+              ")",
+              "`",
+          ]
+        - [
+              { type: trans, t: LCtrl },
+              { h: LGui, t: 1 },
+              { h: LAlt, t: 2 },
+              { h: LShift, t: 3 },
+              { h: LCtrl, t: 4 },
+              5,
+              6,
+              { h: RCtrl, t: 7 },
+              { h: RShift, t: 8 },
+              { h: RAlt, t: 9 },
+              { h: RGui, t: 0 },
+              "|",
+          ]
+        - [
+              { type: trans, t: LShift },
+              { s: U+E9, t: "é" },
+              { s: U+A3, t: "£" },
+              { s: U+20AC, t: "€" },
+              "[",
+              "]",
+              "{",
+              "}",
+              "=",
+              "+",
+              "\\",
+              "~",
+          ]
+        - [
+              { type: ghost },
+              { type: held },
+              { type: ghost },
+              { type: trans, t: Ret },
+              { t: Game, h: toggle },
+              { type: trans, t: BSpc },
+          ]
+    Fun:
+        - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12]
+        - [
+              Mute,
+              { h: Gui, t: Vol- },
+              { h: Alt, t: Vol+ },
+              { h: Shift, t: Media Prev },
+              { h: Ctrl, t: Media Play },
+              Media Next,
+              Left,
+              { h: Ctrl, t: Down },
+              { h: Shift, t: Up },
+              { h: Alt, t: Right },
+              { h: Gui, t: かな },
+              Print Screen,
+          ]
+        - [
+              BT CLR,
+              { t: BT, h: "0" },
+              { t: BT, h: "1" },
+              { t: BT, h: "2" },
+              { t: BT, h: "3" },
+              { t: BT, h: "4" },
+              Home,
+              PgDn,
+              PgUp,
+              End,
+              半角 全角,
+              { type: trans, t: Del },
+          ]
+        - [
+              { type: trans, t: Esc },
+              { t: Game, h: toggle },
+              { type: trans, t: Spc },
+              { type: ghost },
+              { type: held },
+              { type: ghost },
+          ]
