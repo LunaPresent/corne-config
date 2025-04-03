@@ -43,13 +43,6 @@
             bindings = <&kp LS(LC(U)) &kp E &kp N9 &kp RET>;
             label = "Unicode e Acute (é)";
         };
-
-        combo_hyper_m: combo-hyper-m {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(LA(LC(LG(M))))>;
-            label = "Hyper M";
-        };
     };
 
     keymap {
@@ -78,10 +71,10 @@
         game-alt-layer {
             display-name = "GAlt";
             bindings = <
-&trans  &trans        &trans        &trans      &trans    &combo_hyper_m    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans      &trans    &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT        &trans  &trans  &trans  &trans  &trans  &trans
-                                    &none       &none     &trans            &trans  &trans  &trans
+&trans  &trans        &trans        &trans      &trans    &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans      &trans    &kp LG(M)     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PP  &kp C_NEXT    &trans  &trans  &trans  &trans  &trans  &trans
+                                    &none       &trans    &none         &trans  &trans  &trans
             >;
         };
 
