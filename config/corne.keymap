@@ -68,10 +68,10 @@
         game-layer {
             display-name = "Game";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E    &kp R      &kp T    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp A  &kp S  &kp D    &kp F      &kp G    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp Z  &kp X  &kp C    &kp V      &kp B    &trans  &trans  &trans  &trans  &trans  &trans
-                         &kp ESC  &kp SPACE  &mo 2    &trans  &trans  &trans
+&kp TAB    &kp Q  &kp W  &kp E    &kp R  &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp A  &kp S  &kp D    &kp F  &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C    &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp ESC  &mo 2  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
