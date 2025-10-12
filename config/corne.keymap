@@ -48,10 +48,10 @@
         symbol-layer {
             display-name = "Sym";
             bindings = <
-&trans  &kp EXCL     &kp AT       &kp POUND     &kp DOLLAR    &kp PRCNT    &kp CARET  &kp AMPS      &kp ASTRK     &kp LPAR     &kp RPAR     &kp GRAVE
-&trans  &hm LGUI N1  &hm LALT N2  &hm LSHFT N3  &hm LCTRL N4  &kp N5       &kp N6     &hm RCTRL N7  &hm RSHFT N8  &hm RALT N9  &hm RGUI N0  &kp PIPE
-&LEFT   &DOWN        &UP          &RIGHT        &kp PLUS      &kp EQUAL    &kp LBRC   &kp RBRC      &kp LBKT      &kp RBKT     &kp BSLH     &kp TILDE
-                                  &none         &trans        &none        &trans     &tog 1        &trans
+&trans    &kp EXCL     &kp AT       &kp POUND     &kp DOLLAR    &kp PRCNT    &kp CARET  &kp AMPS      &kp ASTRK     &kp LPAR     &kp RPAR     &kp GRAVE
+&trans    &hm LGUI N1  &hm LALT N2  &hm LSHFT N3  &hm LCTRL N4  &kp N5       &kp N6     &hm RCTRL N7  &hm RSHFT N8  &hm RALT N9  &hm RGUI N0  &kp PIPE
+&kp LEFT  &kp DOWN     &kp UP       &kp RIGHT     &kp PLUS      &kp EQUAL    &kp LBRC   &kp RBRC      &kp LBKT      &kp RBKT     &kp BSLH     &kp TILDE
+                                    &none         &trans        &none        &trans     &tog 1        &trans
             >;
         };
 
