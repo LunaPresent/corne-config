@@ -1,7 +1,7 @@
 # https://keymap-drawer.streamlit.app/
 layout: { zmk_keyboard: corne }
 layers:
-    Default: # maybe swap tab and esc, should try this first though for vim reasons
+    Default:
         - [Tab, Q, W, E, R, T, Y, U, I, O, P, { t: "-", s: _ }]
         - [
               LCtrl,
@@ -34,63 +34,12 @@ layers:
         - [Esc, Sym, Spc, Ret, Fun, BSpc]
     Game:
         - [
-              Tab,
-              Q,
-              W,
-              E,
-              R,
-              T,
-              { type: trans, t: Y },
-              { type: trans, t: U },
-              { type: trans, t: I },
-              { type: trans, t: O },
-              { type: trans, t: P },
-              { type: trans, t: "-", s: _ },
-          ]
-        - [
-              LCtrl,
-              A,
-              S,
-              D,
-              F,
-              G,
-              { type: trans, t: H },
-              { type: trans, h: RCtrl, t: J },
-              { type: trans, h: RShift, t: K },
-              { type: trans, h: RAlt, t: L },
-              { type: trans, h: RGui, t: ;, s: ":" },
-              { type: trans, t: "'", s: '"' },
-          ]
-        - [
-              LShift,
-              Z,
-              X,
-              C,
-              V,
-              B,
-              { type: trans, t: N },
-              { type: trans, t: M },
-              { type: trans, t: ",", s: < },
-              { type: trans, t: ., s: ">" },
-              { type: trans, t: /, s: "?" },
-              { type: trans, t: Del },
-          ]
-        - [
-              Esc,
-              Spc,
-              GAlt,
-              { type: trans, t: Ret },
-              { type: trans, t: Fun },
-              { type: trans, t: BSpc },
-          ]
-    GAlt:
-        - [
               { type: trans, t: Tab },
               { type: trans, t: Q },
               { type: trans, t: W },
               { type: trans, t: E },
               { type: trans, t: R },
-              { h: (macro), t: "hyper M" },
+              { type: trans, t: T },
               { type: trans, t: Y },
               { type: trans, t: U },
               { type: trans, t: I },
@@ -100,10 +49,10 @@ layers:
           ]
         - [
               { type: trans, t: LCtrl },
-              { type: trans, t: A },
-              { type: trans, t: S },
-              { type: trans, t: D },
-              { type: trans, t: F },
+              A,
+              S,
+              D,
+              F,
               { type: trans, t: G },
               { type: trans, t: H },
               { type: trans, h: RCtrl, t: J },
@@ -114,11 +63,11 @@ layers:
           ]
         - [
               { type: trans, t: LShift },
-              Vol-,
-              Vol+,
-              Media Prev,
-              Media Play,
-              Media Next,
+              { type: trans, t: Z },
+              { type: trans, t: X },
+              { type: trans, t: C },
+              { type: trans, t: V },
+              { type: trans, t: B },
               { type: trans, t: N },
               { type: trans, t: M },
               { type: trans, t: ",", s: < },
@@ -127,9 +76,9 @@ layers:
               { type: trans, t: Del },
           ]
         - [
-              { type: ghost },
-              { type: ghost },
-              { type: held },
+              { type: trans, t: Esc },
+              { type: trans, t: Sym },
+              { type: trans, t: Spc },
               { type: trans, t: Ret },
               { type: trans, t: Fun },
               { type: trans, t: BSpc },
@@ -164,16 +113,16 @@ layers:
               "|",
           ]
         - [
-              { type: trans, t: LShift },
-              { s: U+E9, t: "é" },
-              { s: U+A3, t: "£" },
-              { s: U+20AC, t: "€" },
-              "[",
-              "]",
+              Left,
+              Down,
+              Up,
+              Right,
               "{",
               "}",
-              "=",
+              "[",
+              "]",
               "+",
+              "=",
               "\\",
               "~",
           ]
@@ -198,7 +147,7 @@ layers:
               { h: Ctrl, t: Down },
               { h: Shift, t: Up },
               { h: Alt, t: Right },
-              { h: Gui, t: かな },
+              { h: Gui, t: Caps },
               Print Screen,
           ]
         - [
@@ -212,7 +161,7 @@ layers:
               PgDn,
               PgUp,
               End,
-              半角 全角,
+              Ins,
               { type: trans, t: Del },
           ]
         - [

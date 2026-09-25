@@ -14,10 +14,6 @@
 - spacebar in better position when fingers are on wasd
 - minimal function layer for quick media controls without having to leave game layer
 
-### no nice!view
-
-I don't have displays, so nice!views aren't configured
-
 ## Layout
 
 ![keymap](./layout.svg)
